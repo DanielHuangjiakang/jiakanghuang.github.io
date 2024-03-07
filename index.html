@@ -911,6 +911,143 @@
 
     <!-- translate JS -->
     <script>
+      // Define the translations within the script
+      const translations = {
+        cn: {
+          home: "主页",
+          about: "关于",
+          skills: "技能",
+          portfolio: "项目集",
+          contact: "联系方式",
+          home__title: "Hi, 我叫黄佳康",
+          home__subtitle: "英属哥伦比亚大学2026 计算机科学💻",
+          home__description: "做有意义的事，做有趣的人",
+          home__contact: "与我联系",
+          "home__scroll-name": "往下滑",
+          about__title: "关于我",
+          about__subtitle: "简单介绍",
+          about__description:
+            "UBC计算机本科大二在读，找实习中(2024.09-2025.09), 全栈开发，网页开发，软件开发，游戏开发，算法，VR开发。全天24小时在线，随时打扰！",
+          "about__info-name1": "2年工作<br/>经验",
+          "about__info-name2": "7个完整<br/>项目",
+          "about__info-name3": "2家公司 <br /> 实习经历",
+          download: "查看简历",
+          skills__title: "技能",
+          skills__subtitle: "我的专业技能",
+          skills__title1: "• 编程语言:",
+          skills__years1: "超过两年",
+          skills__title2: "• 测试工具:",
+          skills__years2: "超过两年",
+          skills__title3: "• 网页开发:",
+          skills__years3: "超过1年",
+
+          qualification__title: "资历",
+          qualification__subtitle: "我的个人历程",
+          education: "教育",
+          work: "工作",
+          qualification1__title: "计算机科学 + 数据科学",
+          qualification1__subtitle: "不列颠哥伦比亚大学",
+          qualification2__title: "网页设计",
+          qualification2__subtitle: "自学",
+          qualification3__title: "全栈软件开发者",
+          qualification3__subtitle: "IBM",
+          qualification4__title: "BBR: 网站维护",
+          qualification4__subtitle: "温哥华",
+          qualification5__title: "全栈开发者",
+          qualification5__subtitle: "成都",
+          qualification6__title: "中国银行：移动应用功能测试员",
+          qualification6__subtitle: "成都",
+
+          portfolio__title: "项目集",
+          portfolio__subtitle: "最新作品",
+          portfolio1__title: "仓库管理系统",
+          portfolio1__description:
+            "该应用帮助仓库主轻松跟踪和更新库存，包括他们购买和销售的产品的价格和数量。[Java JSON JavaSwing]",
+          portfolio2__title: "RateIt",
+          portfolio2__description:
+            "该应用允许用户为广泛的主题创建自定义评分类别，包括大学、游戏直播者、名人、图书馆，甚至公共洗手间。[HTML CSS JavaScript SQL]",
+          portfolio3__title: "鸟类骨骼种类区分",
+          portfolio3__description:
+            "鸟骨分类：基于骨骼结构区分陆地鸟和飞行鸟。[R Jupyter Notebook]",
+
+          contact__title: "联系方式",
+          contact__subtitle: "与我联系",
+          tel: "电话",
+          tel__number: "13348805227",
+          email: "电子邮箱",
+          email__address: "jhuang74@students.cs.ubc.ca",
+          location: "位置",
+          location__detail: "四川省成都市",
+          Name: "黄佳康",
+          footer_sub: "全栈开发者",
+        },
+        en: {
+          home: "home",
+          about: "about",
+          skills: "skills",
+          portfolio: "portfolio",
+          contact: "contact",
+          home__title: "Hi, I'm Jiakang Huang",
+          home__subtitle: "UBC2026 Computer Science💻",
+          home__description: "Persistently Advancing, Constantly Evolving！",
+          home__contact: "Contact Me",
+          "home__scroll-name": "Scroll down",
+          about__title: "About Me",
+          about__subtitle: "My introduction",
+          about__description:
+            "UBC Computer Science undergraduate second year, looking for internships (Sep 2024 - Sep 2025), interested in full-stack development, web development, software development, game development, algorithms, VR development. Available 24/7, feel free to reach out anytime!",
+          "about__info-name1": "2 Years of <br /> experience",
+          "about__info-name2": "7 Completed <br /> projects",
+          "about__info-name3": "2 Companies <br /> worked",
+          download: "Download CV",
+          skills__title: "Skills",
+          skills__subtitle: "My technical level",
+          skills__title1: "• Programming Languages:",
+          skills__years1: "More than 2 years",
+          skills__title2: "• Testing Tools:",
+          skills__years2: "More than 2 years",
+          skills__title3: "• Web development:",
+          skills__years3: "More than 1 year",
+          qualification__title: "Qualification",
+          qualification__subtitle: "My personal journey",
+          education: "Education",
+          work: "Work",
+          qualification1__title: "Computer Science + Data Science",
+          qualification1__subtitle: "University of British Colunmbia",
+          qualification2__title: "Web Design",
+          qualification2__subtitle: "Self-Study",
+          qualification3__title: "Full Stack Software Developer",
+          qualification3__subtitle: "IBM",
+          qualification4__title: "BBR: Website Maintenance",
+          qualification4__subtitle: "Vancouver",
+          qualification5__title: "Full Stack Developer",
+          qualification5__subtitle: "Chengdu",
+          qualification6__title: " Bank of China: Mobile App Functional Tester",
+          qualification6__subtitle: "Chengdu",
+          portfolio__title: "Portfolio",
+          portfolio__subtitle: "Most recent works",
+          portfolio1__title: "Warehouse Management System",
+          portfolio1__description:
+            "The app helps store owners easily track and update their inventory, including prices and quantities for products they buy and sell.[Java JSON JavaSwing]",
+          portfolio2__title: "RateIt",
+          portfolio2__description:
+            "This application allows users to create custom rating categories for a wide range of subjects, including colleges, game streamers, celebrities, libraries, and even public restrooms.[HTML CSS JavaScript SQL]",
+          portfolio3__title: "Bird Skeleton Species Differentiation",
+          portfolio3__description:
+            "Bird Bone Classification: Distinguishing Terrestrial and Flying Birds Based on Skeletal Structure.[R Jupyter Notebook]",
+          contact__title: "Contact me",
+          contact__subtitle: "Get in touch",
+          tel: "Call me",
+          tel__number: "+17789295227",
+          email: "E-mail",
+          email__address: "jhuang74@students.cs.ubc.ca",
+          location: "Location",
+          location__detail: "Vancouver, BC",
+          Name: "Jiakang Huang",
+          footer_sub: "Full Stack Developer",
+        },
+      };
+
       document.addEventListener("DOMContentLoaded", function () {
         var defaultLang = navigator.language.startsWith("zh") ? "cn" : "en";
         updateLanguage(defaultLang);
@@ -922,22 +1059,18 @@
             defaultLang = newLang;
             updateLanguage(newLang);
           });
-
-        function updateLanguage(lang) {
-          fetch(`/assets/i18n/i18n_${lang}.json`)
-            .then((response) => response.json())
-            .then((data) => {
-              document.querySelectorAll("[i18n]").forEach((el) => {
-                const key = el.getAttribute("i18n");
-                el.textContent = data[key];
-              });
-
-              var buttonText = lang === "cn" ? "中/En" : "En/中";
-              document.getElementById("nav__translate").textContent =
-                buttonText;
-            });
-        }
       });
+
+      function updateLanguage(lang) {
+        const data = translations[lang];
+        document.querySelectorAll("[i18n]").forEach((el) => {
+          const key = el.getAttribute("i18n");
+          el.textContent = data[key];
+        });
+
+        var buttonText = lang === "cn" ? "中/En" : "En/中";
+        document.getElementById("nav__translate").textContent = buttonText;
+      }
     </script>
   </body>
 </html>
