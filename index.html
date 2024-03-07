@@ -903,13 +903,41 @@
     <script src="assets/js/iconfont.js"></script>
     <!-- jquery -->
 
-    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script> -->
 
     <script src="assets/js/jquery.i18n.min.js"></script>
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
 
     <!-- translate JS -->
-    <script src="assets/js/cn-en-translate.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var defaultLang = navigator.language.startsWith("zh") ? "cn" : "en";
+        updateLanguage(defaultLang);
+
+        document
+          .getElementById("translate")
+          .addEventListener("click", function () {
+            var newLang = defaultLang === "cn" ? "en" : "cn";
+            defaultLang = newLang;
+            updateLanguage(newLang);
+          });
+
+        function updateLanguage(lang) {
+          fetch(`/assets/i18n/i18n_${lang}.json`)
+            .then((response) => response.json())
+            .then((data) => {
+              document.querySelectorAll("[i18n]").forEach((el) => {
+                const key = el.getAttribute("i18n");
+                el.textContent = data[key];
+              });
+
+              var buttonText = lang === "cn" ? "中/En" : "En/中";
+              document.getElementById("nav__translate").textContent =
+                buttonText;
+            });
+        }
+      });
+    </script>
   </body>
 </html>
